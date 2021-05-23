@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<!-- type = dto경로의 풀 경로 작성 , alias = 소문자로 파일이름 작성 -->
+		<typeAlias type="com.icia.ex.dto.ExDTO" alias="exdto"/>
+	</typeAliases>
+</configuration>
+ 

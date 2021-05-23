@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="ex"> 
+ <!-- ExDTO파일을 PARAMETER로 받기 때문에 DTO패키지의 전체 경로를 써줘야 한다.
+ 		단, mybatis-config.xml에 typeAlias태그를 이용하여 별칭을 지정하면 alias에서 사용한 이름으로 type을 지정해 줄 수 있다. 
+ 		
+ 		값을 넣을 때 dto의 필드이름으로 담아주면 된다.-->
+	<insert id="insertDB" parameterType="exdto">
+		insert into extable(col1,col2,col3) values(#{col1},#{col2},#{col3})
+	</insert>
+	
+	<select id="selectDB" resultType="exdto">
+		select * from extable
+	</select>
+ </mapper>
