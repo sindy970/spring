@@ -16,5 +16,7 @@
 <a href="loginpage">로그인 페이지로 이동</a><br>
 <a href="listpage">목록출력 페이지로 이동</a><br>
 
+로그인아이디 : ${sessionScope.loginMember}<br>
+
 </body>
 </html>

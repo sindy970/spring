@@ -8,10 +8,11 @@
 </head>
 <body>
 <h2>memberlongin.jsp페이지 입니다.</h2>
-<form action="memberlogin">
-아이디 : <input type="text" name="mid1"><br>
-비밀번호 : <input type="text" name="mpassword1"><br>
-<input type="submit" value="로그인">
-</form>
+	<form action="memberlogin" method="post">
+	<!-- name값은 필드에 지정한 값 그대로 지정해 줘야 한다. -->
+	아이디 : <input type="text" name="mid"><br>
+	비밀번호 : <input type="text" name="mpassword"><br>
+	<input type="submit" value="로그인">
+	</form>
 </body>
 </html>
